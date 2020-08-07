@@ -6,12 +6,14 @@ import HomeHardware from './HomeHardware/homeHardware';
 import HomeInstallation from './HomeInstallation/homeInstallation';
 import HomeContact from './HomeContact/HomeContact';
 import HomeSummary from './HomeSummary/homeSummary';
+import SeprateBar from './../common/separateBar';
 import './Home.scss';
 
 const Home = () => {
   return (
     <div className="homeContainer" id="main">
       <HomeHeader />
+      <SeprateBar />
       <HomeInvestition />
       <HomeNeed />
       <HomeHardware />

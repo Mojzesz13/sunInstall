@@ -1,10 +1,11 @@
 import React from 'react';
 import './Investition.scss';
+import SeparateBar from '../../common/separateBar';
 
 const HomeInvestition = () => {
   return (
     <div className="homeInvestition" id="investition">
-      Investition
+      <SeparateBar title="INWESTYCJA W PRZYSZŁOŚĆ" number="1" />
     </div>
   );
 };

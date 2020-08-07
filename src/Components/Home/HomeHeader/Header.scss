@@ -8,14 +8,14 @@
 
   .barContainer {
     width: 95%;
-    height: 5%;
-    background-color: #e3af34;
-    float: right;
+    height: 5rem;
+    background-color: #ebaf23;
+    align-self: flex-end;
     display: flex;
     .shapeContainer {
       width: 0;
       height: 0;
-      border-top: 4.5rem solid purple;
+      border-top: 5rem solid purple;
       border-right: 4rem solid transparent;
       margin-left: 5%;
     }
@@ -26,9 +26,16 @@
     }
   }
   .sloganContainer {
+    align-self: center;
     height: 15rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    flex-direction: column;
+    p {
+      margin-top: 10rem;
+      font-size: 3.2rem;
+      color: whitesmoke;
+    }
   }
 }

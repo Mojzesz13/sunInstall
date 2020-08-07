@@ -13,8 +13,8 @@ const Header = () => {
         </p>
       </div>
       <div className="sloganContainer">
+        <p>Zainstalujemy słońce w Twoim domu.</p>
         <DecorationBar />
-        <p>ZAINSTALUJEMY SŁOŃCE W TWOIM DOMU</p>
       </div>
     </div>
   );
