@@ -1,0 +1,72 @@
+@import 'src/scss/settings/mixins';
+
+.headerLinks {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+  justify-content: space-evenly;
+  .headerLinks .active {
+    display: none;
+  }
+
+  .navItem {
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    background-color: gold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+  }
+
+  .navItem:hover {
+    background-color: #1888ff;
+    color: gray;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+}
+
+@include mobile {
+  .headerLinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 6rem;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .headerLinks.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    .navItem {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  }
+}
+@include tabletMin {
+  .headerLinks {
+    display: none;
+    .navItem {
+      display: none;
+    }
+  }
+}
+
+@include tabletMax {
+}
+
+@include desktop {
+}

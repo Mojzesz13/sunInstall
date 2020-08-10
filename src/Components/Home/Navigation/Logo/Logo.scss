@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+  .logo {
+    color: navy;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
