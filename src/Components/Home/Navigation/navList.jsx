@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import './NavList.scss';
-import Dropdown from './Dropdown';
 
 const NavList = ({ click, dropdown }) => {
   return (
@@ -71,7 +70,6 @@ const NavList = ({ click, dropdown }) => {
         >
           Summary
         </Link>
-        {dropdown && <Dropdown />}
       </li>
     </ul>
   );

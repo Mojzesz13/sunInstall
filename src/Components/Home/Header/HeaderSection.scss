@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  height: 70rem;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .sloganContainer {
+    align-self: center;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    p {
+      margin-top: 10rem;
+      font-size: 3.2rem;
+      color: whitesmoke;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './need.scss';
 
-const Need = ({ icon, title, text }) => {
+const NeedSection = ({ icon, title, text }) => {
   return (
     <div className="need">
       <div className="icon">{icon}</div>
@@ -11,4 +11,4 @@ const Need = ({ icon, title, text }) => {
   );
 };
 
-export default Need;
+export default NeedSection;

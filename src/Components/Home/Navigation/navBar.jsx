@@ -8,7 +8,6 @@ const NavBar = () => {
   const [click, setClick] = useState(false);
 
   const handleOnClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
 
   return (
     <nav className="navBar">
