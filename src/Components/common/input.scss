@@ -1,5 +1,8 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
 .inputHolder {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
@@ -11,5 +14,55 @@
     background-color: transparent;
   }
   .errorMessage {
+  }
+}
+
+@include desktop {
+  .inputHolder {
+    width: 60%;
+
+    .inputContent {
+      min-width: 30rem;
+    }
+    .errorMessage {
+    }
+  }
+}
+
+@include tabletMax {
+  .inputHolder {
+    width: 70%;
+
+    .inputContent {
+      min-width: 30rem;
+    }
+    .errorMessage {
+    }
+  }
+}
+
+@include tabletMin {
+  .inputHolder {
+    width: 80%;
+
+    .inputContent {
+      min-width: 30rem;
+    }
+    .errorMessage {
+    }
+  }
+}
+
+@include mobile {
+  .inputHolder {
+    width: 90%;
+    margin-top: 1rem;
+    flex-direction: column;
+
+    .inputContent {
+      min-width: 20rem;
+    }
+    .errorMessage {
+    }
   }
 }

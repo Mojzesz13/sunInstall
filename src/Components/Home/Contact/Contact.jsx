@@ -25,9 +25,7 @@ const Contact = () => {
         number="5"
       />
       <div className="barContainer">
-        <div className="barContainer">
-          <p>PIERWSZY KROK NALEŻY DO CIEBIE. ZAPRASZAMY DO KONTAKTU.</p>
-        </div>
+        <p>PIERWSZY KROK NALEŻY DO CIEBIE. ZAPRASZAMY DO KONTAKTU.</p>
       </div>
       <h1>Formularz kontaktowy</h1>
       <form className="formContainer">
@@ -52,9 +50,9 @@ const Contact = () => {
           onChange={handleChange}
           type="text"
         />
-        <div className="textareaContainer">
+        <div className="inputHolder">
           <label>Wiadomość</label>
-          <textarea></textarea>
+          <textarea className="inputContent"></textarea>
         </div>
       </form>
     </div>

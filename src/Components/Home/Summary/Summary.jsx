@@ -5,7 +5,7 @@ import Logo from '../../../assets/logo2.jpg';
 
 const Summary = () => {
   const text =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla diam tristique, ultricies velit sed.';
+    'Lorem ipsum  adipiscing elit. Sed fringilla diam tristique, ultricies velit sed.';
 
   return (
     <div className="summaryContainer" id="summary">

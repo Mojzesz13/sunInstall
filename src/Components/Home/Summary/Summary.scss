@@ -7,24 +7,77 @@
   background-image: url('../../../assets/summaryWallpper.jpg');
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 
+  .barContainer {
+    margin-top: 3rem;
+  }
   .summaryContent {
+    margin-top: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90%;
 
     img {
       width: 40%;
     }
     h1 {
+      margin-top: 2%;
       font-weight: 700;
-      color: #ebaf23;
+      color: $barContainerColor;
       font-size: 6rem;
       span {
         font-size: 4rem;
       }
+    }
+  }
+}
+
+@include tabletMax {
+  .summaryContainer {
+    .summaryContent {
+      margin-top: 10%;
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include tabletMin {
+  .summaryContainer {
+    height: 80rem;
+    .summaryContent {
+      h1 {
+        margin-top: 5%;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .summaryContainer {
+    .summaryContent {
+      margin-top: 15%;
+      img {
+        width: 70%;
+      }
+      h1 {
+        font-size: 4rem;
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobileMin {
+  .summaryContainer {
+    .summaryContent {
+      margin-top: 25%;
     }
   }
 }

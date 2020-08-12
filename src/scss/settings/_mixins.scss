@@ -35,4 +35,12 @@
   font-size: 6rem;
   font-weight: 600;
   color: $fontTitleColor;
+
+  @include tabletMax {
+    font-size: 5rem;
+  }
+
+  @include mobile {
+    font-size: 3rem;
+  }
 }
