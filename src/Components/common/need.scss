@@ -1,14 +1,15 @@
+@import 'src/scss/settings/mixins';
+
 .need {
-  width: 30rem;
+  width: 35rem;
   height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 4rem 1rem 1rem 2rem;
+  margin: 2rem 1rem;
 
   .icon {
     display: flex;
-
     justify-content: center;
     width: 100%;
     font-size: 6rem;
@@ -20,5 +21,42 @@
   .text {
     font-size: 2rem;
     text-align: center;
+  }
+}
+
+@include desktop {
+  .need {
+    width: 35rem;
+    height: 25rem;
+  }
+}
+
+@include tabletMax {
+  .need {
+    width: 30rem;
+    height: 25rem;
+  }
+}
+
+@include tabletMin {
+  .need {
+    width: 25rem;
+    height: 20rem;
+  }
+}
+
+@include mobile {
+  .need {
+    width: 20rem;
+    height: 15rem;
+    .icon {
+      font-size: 3rem;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .text {
+      font-size: 1.2rem;
+    }
   }
 }

@@ -1,3 +1,6 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
 .textContainer {
   width: 20%;
   font-size: 3rem;
@@ -5,8 +8,32 @@
   p {
     width: 80%;
     margin-top: 10%;
+    text-indent: 1rem;
     span {
       font-weight: 700;
+    }
+  }
+}
+
+@include tabletMax {
+  .textContainer {
+    font-size: 2rem;
+    p {
+      margin-top: 5%;
+    }
+  }
+}
+
+@include mobile {
+  .textContainer {
+    font-size: 1.5rem;
+  }
+}
+
+@include mobileMin {
+  .textContainer {
+    p {
+      margin-top: 0;
     }
   }
 }

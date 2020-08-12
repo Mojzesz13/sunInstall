@@ -16,7 +16,7 @@ const Home = () => {
       <Need />
       <Hardware />
       <Installation />
-      <Contact />
+      {/* <Contact /> */}
       <Summary />
     </div>
   );

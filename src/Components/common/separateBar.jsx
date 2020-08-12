@@ -44,7 +44,7 @@ const SeparateBar = ({ title, number }) => {
 
   return (
     <div className="separateContainer">
-      <div className="shapeHoldr">
+      {/* <div className="shapeHoldr">
         <div className={`square animation ${squarePosition}`}>
           <span>{number}</span>
         </div>
@@ -58,7 +58,7 @@ const SeparateBar = ({ title, number }) => {
         <div className="square" />
         <div className="line" />
         <div className="square" />
-      </div>
+      </div> */}
     </div>
   );
 };

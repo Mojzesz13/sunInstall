@@ -1,34 +1,38 @@
 @import 'src/scss/settings/mixins';
-@import 'src/scss/settings/colors';
 
-.barContainer2 {
+.decorationBarContainer {
   width: 30%;
   height: 5rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
   background-color: transparent;
-  margin-top: 2rem;
-
-  // position: absolute;
   .square {
-    height: 1rem;
-    width: 3.2rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     position: relative;
-    top: 0rem;
+    top: 0;
     left: 0;
     display: block;
     transform: rotate(45deg);
     background-color: white;
+    align-self: center;
     content: '';
   }
 
   .line {
-    align-self: center;
     width: 21.1rem;
     height: 0.13rem;
-    top: 5rem;
+    top: 1rem;
     left: 2rem;
+    align-self: center;
     background-color: white;
     content: '';
+  }
+}
+
+@include mobile {
+  .decorationBarContainer {
+    display: none;
   }
 }

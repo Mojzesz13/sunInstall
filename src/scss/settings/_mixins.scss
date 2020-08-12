@@ -1,25 +1,31 @@
 @import 'src/scss/settings/colors';
 
-@mixin mobile() {
+@mixin mobileMin() {
   @media (max-width: 500px) {
     @content;
   }
 }
 
+@mixin mobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin tabletMin() {
-  @media (min-width: 501px) and (max-width: 710px) {
+  @media (max-width: 921px) {
     @content;
   }
 }
 
 @mixin tabletMax() {
-  @media (min-width: 711px) and (max-width: 1024px) {
+  @media (max-width: 1199px) {
     @content;
   }
 }
 
 @mixin desktop() {
-  @media (min-width: 1025px) and (max-width: 1450px) {
+  @media (max-width: 1450px) {
     @content;
   }
 }

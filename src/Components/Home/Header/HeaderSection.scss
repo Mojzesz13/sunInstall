@@ -1,22 +1,46 @@
+@import 'src/scss/settings/mixins';
+
 .header {
   width: 100%;
   height: 70rem;
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: transparent;
 
   .sloganContainer {
-    align-self: center;
     height: 15rem;
     display: flex;
     align-items: center;
     justify-content: end;
     flex-direction: column;
     p {
-      margin-top: 10rem;
-      font-size: 3.2rem;
+      width: 50%;
+      justify-self: flex-end;
+      font-size: 5rem;
       color: whitesmoke;
+      text-align: center;
+    }
+  }
+}
+
+@include tabletMax {
+  .header {
+    .sloganContainer {
+      margin-bottom: 5%;
+      p {
+        width: 80%;
+        font-size: 4.2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    .sloganContainer {
+      margin-bottom: 15%;
     }
   }
 }

@@ -3,7 +3,7 @@ import './decorationBar.scss';
 
 const DecorationBar = () => {
   return (
-    <div className="barContainer2">
+    <div className="decorationBarContainer">
       <div className="square" />
       <div className="line" />
       <div className="square" />

@@ -19,63 +19,42 @@
     transition: all 0.2s ease-out;
   }
 }
-@include mobile {
-  .headerLinks {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 60vh;
-    position: absolute;
-    top: 8%;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-  .headerLinks.active {
-    background: white;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-  .navLink {
-    margin-left: 1rem;
-  }
-}
-
-@include tabletMin {
-  .headerLinks {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    top: 5.7%;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-  .headerLinks.active {
-    background: #242222;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-}
 
 @include tabletMax {
   .headerLinks {
-    a {
-      font-size: 1.2rem;
+    width: 50%;
+    height: 49%;
+    margin-top: 7%;
+    position: absolute;
+    top: 5.7%;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease;
+    .navItem {
+      margin: 0 1rem;
+      font-weight: 600;
+      background-color: $barContainerColor;
+      color: $logoColor;
     }
+  }
+  .headerLinks.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
   }
 }
 
-@include desktop {
+@include mobile {
   .headerLinks {
-    a {
-      font-size: 2.5rem;
+    width: 100%;
+    margin-top: 25%;
+    .navItem {
+      text-align: center;
+      border: 1px dotted black;
+      border-radius: 0.4rem;
     }
   }
 }

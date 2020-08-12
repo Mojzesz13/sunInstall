@@ -14,32 +14,18 @@
   }
 }
 
-@include mobile {
-  .navBar {
-    justify-content: space-around;
-    .menuIcon {
-      display: block;
-      height: 4rem;
-      width: 4rem;
-      background-color: greenyellow;
-    }
-  }
-}
-
-@include tabletMin {
-  .navBar {
-    justify-content: space-around;
-    .menuIcon {
-      display: block;
-      height: 4rem;
-      width: 4rem;
-      background-color: greenyellow;
-    }
-  }
-}
-
 @include tabletMax {
-}
-
-@include desktop {
+  .navBar {
+    justify-content: space-between;
+    .menuIcon {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 2rem;
+      display: block;
+      text-align: center;
+      i {
+        font-size: 4rem;
+      }
+    }
+  }
 }

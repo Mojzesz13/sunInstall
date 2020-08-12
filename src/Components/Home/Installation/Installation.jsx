@@ -30,21 +30,9 @@ const Installation = () => {
     <div className="installationContainer " id="installation">
       <SeparateBar title="Proste, wygodne, opłacalne" number="4" />
       <div className="imagesContainer">
-        <img
-          className="installationPicture one"
-          src={firstPhoto}
-          alt="WorkerPicture"
-        />
-        <img
-          className="installationPicture one"
-          src={secendPhoto}
-          alt="WorkerPicture"
-        />
-        <img
-          className="installationPicture one"
-          src={thirdPhoto}
-          alt="WorkerPicture"
-        />
+        <img src={firstPhoto} alt="WorkerPicture" />
+        <img src={secendPhoto} alt="WorkerPicture" />
+        <img src={thirdPhoto} alt="WorkerPicture" />
       </div>
       <div className="textContainer">
         <TextContainer text={firstParagraph} />
