@@ -1,14 +1,17 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
 .barContainer {
   width: 95%;
   height: 5rem;
-  background-color: #ebaf23;
+  background-color: $barContainerColor;
   align-self: flex-end;
   display: flex;
   margin-top: 1rem;
   .shapeContainer {
     width: 0;
     height: 0;
-    border-top: 5rem solid purple;
+    border-top: 5rem solid $shapeColor;
     border-right: 4rem solid transparent;
     margin-left: 5%;
   }

@@ -2,21 +2,21 @@ import React from 'react';
 import './Installation.scss';
 import SeparateBar from '../../common/separateBar';
 import TextContainer from '../../common/textContainer';
-import PictureFirst from '../../../assets/workerFirst.jpg';
-import PictureSecond from '../../../assets/workerSecond.jpg';
-import PictureThird from '../../../assets/workerFirst.jpg';
+import firstPhoto from '../../../assets/workerFirst.jpg';
+import secendPhoto from '../../../assets/workerSecond.jpg';
+import thirdPhoto from '../../../assets/workerFirst.jpg';
 
 const Installation = () => {
   const firstParagraph = (
     <p>
       <span>Zamień rachunek za prąd </span> na spłatę paneli fotowoltaicznych,
-      by później cieszyć się darmowym prądem.{' '}
+      by później cieszyć się darmowym prądem.
     </p>
   );
   const secondParagraph = (
     <p>
       <span> Część lub całość inwestycji </span> możesz spłacić w ratach, a
-      nawet otrzymać dofinansowanie.{' '}
+      nawet otrzymać dofinansowanie.
     </p>
   );
   const thirdParagraph = (
@@ -32,17 +32,17 @@ const Installation = () => {
       <div className="imagesContainer">
         <img
           className="installationPicture one"
-          src={PictureFirst}
+          src={firstPhoto}
           alt="WorkerPicture"
         />
         <img
           className="installationPicture one"
-          src={PictureSecond}
+          src={secendPhoto}
           alt="WorkerPicture"
         />
         <img
           className="installationPicture one"
-          src={PictureThird}
+          src={thirdPhoto}
           alt="WorkerPicture"
         />
       </div>

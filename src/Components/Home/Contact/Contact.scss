@@ -1,10 +1,11 @@
 @import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
 
 .contactContainer {
   width: 100%;
   height: 70rem;
   background-image: url('../../../assets/contactBackground.jpg');
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 
