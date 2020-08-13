@@ -2,7 +2,8 @@
 @import 'src/scss/settings/colors';
 
 .separateContainer {
-  width: 100%;
+  // width: 100%;
+  max-width: 190rem;
   height: 10rem;
   margin: 0 auto;
   display: flex;
@@ -99,7 +100,7 @@
       border: none;
 
       span {
-        // transform: rotate(-15deg);
+        transform: rotate(-45deg);
         color: white;
         font-size: 3rem;
         display: flex;
@@ -125,7 +126,7 @@
     }
 
     .fifthSquare {
-      left: 75.85vw;
+      left: 78.6vw;
     }
 
     .title {
@@ -183,21 +184,6 @@
       .title {
         font-size: 1.2rem;
       }
-      // .secondPosition {
-      //   left: 54rem;
-      // }
-
-      // .thirdPosition {
-      //   left: 83rem;
-      // }
-
-      // .fourthPosition {
-      //   left: 90.8rem;
-      // }
-
-      // .fifthPosition {
-      //   left: 95rem;
-      // }
     }
   }
 }

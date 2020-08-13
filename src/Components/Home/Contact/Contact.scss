@@ -29,6 +29,42 @@
     background-color: transparent;
     font-size: 2rem;
     font-weight: 700;
+
+    .buttonContainer {
+      width: 60%;
+      margin: 3% 0 0 35%;
+      display: flex;
+      align-items: center;
+
+      button {
+        width: 12rem;
+        height: 4rem;
+        background-color: $barContainerColor;
+        border: none;
+        font-size: 2rem;
+      }
+      button:hover {
+        border: 1px solid black;
+        background-color: $navList;
+        border-radius: 4px;
+      }
+
+      input {
+        width: 5%;
+        margin-left: 7rem;
+      }
+
+      p {
+        font-size: 1.7rem;
+        font-weight: 600;
+        width: 60%;
+        span {
+          color: $barContainerColor;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .formContainer:before {
@@ -72,8 +108,30 @@
 
 @include mobile {
   .contactContainer {
-    .formContainer:before {
-      left: 40%;
+    .formContainer {
+      .formContainer:before {
+        left: 40%;
+      }
+      .buttonContainer {
+        width: 100%;
+        margin: 2rem 0 0 2rem;
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 5%;
+          margin-left: 1rem;
+        }
+
+        p {
+          margin-left: 1rem;
+          span {
+            color: $barContainerColor;
+            font-size: 2rem;
+            font-weight: 700;
+          }
+        }
+      }
     }
   }
 }

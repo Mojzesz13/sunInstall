@@ -3,12 +3,21 @@ import './Contact.scss';
 import SeparateBar from '../../common/separateBar';
 import Input from '../../common/input';
 
+const initialState = {
+  personalDate: '',
+  phoneNumber: '',
+  city: '',
+  message: '',
+  checkbox: '',
+};
+
 const Contact = () => {
   const [data, setData] = useState({
     personalDate: '',
     phoneNumber: '',
     city: '',
     message: '',
+    checkbox: '',
   });
 
   const handleChange = (event) => {
@@ -38,7 +47,7 @@ const Contact = () => {
           label="Numer telefonu"
           value={data.phoneNumber}
           onChange={handleChange}
-          type="number"
+          type="text"
         />
         <Input
           name="city"
@@ -50,6 +59,13 @@ const Contact = () => {
         <div className="inputHolder">
           <label>Wiadomość</label>
           <textarea className="inputContent"></textarea>
+        </div>
+        <div className="buttonContainer">
+          <button>WYŚLIJ</button>
+          <input name="checkbox" value={data.checkbox} type="checkbox" />
+          <p>
+            Akceptuje polityke prywatnosci <span>RODO</span>
+          </p>
         </div>
       </form>
     </div>
