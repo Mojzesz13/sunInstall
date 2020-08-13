@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SeparateBar.scss';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const SeparateBar = ({ title, number }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   let squarePosition = '';
   switch (number) {
     case '1':
@@ -45,11 +51,17 @@ const SeparateBar = ({ title, number }) => {
   return (
     <div className="separateContainer">
       <div className="shapeHoldr">
-        <div className={`square animation ${squarePosition}`}>
+        <div
+          // data-aos="fade-down"
+          // data-aos="slide-down"
+          className={`square animation ${squarePosition}`}
+        >
           <span>{number}</span>
         </div>
         <div className={`title ${titlePosition}`}>{title}</div>
-        <div className="square" />
+        <div className="square">
+          {/* <div className="test">{number}</div> */}
+        </div>
         <div className="line" />
         <div className="square" />
         <div className="line" />

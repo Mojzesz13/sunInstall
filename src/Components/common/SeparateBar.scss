@@ -13,20 +13,71 @@
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+
     .square {
       height: 4rem;
       min-width: 4rem;
       position: relative;
       top: 3.1rem;
       right: 1rem;
-      display: block;
       transform: rotate(45deg);
       border: 1px solid black;
       margin-left: 1.6rem;
       background-color: transparent;
-      z-index: 200;
+      z-index: 200 !important;
       content: '';
     }
+
+    // .test {
+    //   min-height: 4rem;
+    //   min-width: 4rem;
+    //   position: relative;
+    //   bottom: 1rem;
+    //   right: 1rem;
+    //   display: flex;
+    //   justify-content: center;
+    //   border: 1px solid black;
+    //   background-color: $squareColor;
+
+    //   font-size: 3.5rem;
+    //   color: white;
+    //   content: '';
+    //   z-index: 100 !important;
+    // }
+
+    // .square:nth-child(2)::after {
+    //   min-height: 4rem;
+    //   min-width: 4rem;
+    //   position: relative;
+    //   bottom: 1rem;
+    //   right: 1rem;
+    //   display: flex;
+    //   justify-content: center;
+    //   border: 1px solid black;
+    //   background-color: $squareColor;
+
+    //   font-size: 3.5rem;
+    //   color: white;
+    //   content: ' 1 ';
+    //   z-index: -100;
+    // }
+
+    // span::after {
+    //   min-height: 4rem;
+    //   min-width: 4rem;
+    //   position: relative;
+    //   bottom: 1rem;
+    //   right: 1rem;
+    //   display: flex;
+    //   justify-content: center;
+    //   border: 1px solid black;
+    //   background-color: $squareColor;
+
+    //   font-size: 3.5rem;
+    //   color: white;
+    //   content: '';
+    //   z-index: -100;
+    // }
 
     .line {
       align-self: center;
@@ -48,7 +99,7 @@
       border: none;
 
       span {
-        transform: rotate(-45deg);
+        // transform: rotate(-15deg);
         color: white;
         font-size: 3rem;
         display: flex;
@@ -58,23 +109,23 @@
     }
 
     .firstSquare {
-      left: 11.1vw;
+      left: 12.45vw;
     }
 
     .secondSquare {
-      left: 25.95vw;
+      left: 28.25vw;
     }
 
     .thirdSquare {
-      left: 40.85vw;
+      left: 44.1vw;
     }
 
     .fourthSquare {
-      left: 55.82vw;
+      left: 59.95vw;
     }
 
     .fifthSquare {
-      left: 70.7vw;
+      left: 75.85vw;
     }
 
     .title {
@@ -97,7 +148,7 @@
     }
 
     .fourthPosition {
-      left: 77%;
+      left: 78%;
     }
 
     .fifthPosition {
