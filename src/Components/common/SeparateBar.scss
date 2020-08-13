@@ -13,7 +13,6 @@
     width: 80%;
     display: flex;
     justify-content: space-evenly;
-    margin-left: 3%;
     .square {
       height: 4rem;
       min-width: 4rem;
@@ -31,11 +30,12 @@
 
     .line {
       align-self: center;
-      width: 24rem;
+      width: 20.5vw;
       height: 0.1rem;
       position: relative;
-      top: 0.3rem;
+      top: 0.1rem;
       left: -0.2rem;
+      background-color: black;
       content: '';
     }
     .animation {
@@ -58,23 +58,23 @@
     }
 
     .firstSquare {
-      left: 25.3rem;
+      left: 11.1vw;
     }
 
     .secondSquare {
-      left: 54rem;
+      left: 25.95vw;
     }
 
     .thirdSquare {
-      left: 83rem;
+      left: 40.85vw;
     }
 
     .fourthSquare {
-      left: 90.8rem;
+      left: 55.82vw;
     }
 
     .fifthSquare {
-      left: 95rem;
+      left: 70.7vw;
     }
 
     .title {
@@ -82,26 +82,182 @@
       position: relative;
       font-size: 1.5rem;
       top: 6rem;
-      width: 14rem;
+      width: 20%;
       height: 4rem;
     }
     .firstPosition {
-      left: 27rem;
+      left: 17%;
     }
     .secondPosition {
-      left: 54rem;
+      left: 37%;
     }
 
     .thirdPosition {
-      left: 83rem;
+      left: 57%;
     }
 
     .fourthPosition {
-      left: 90.8rem;
+      left: 77%;
     }
 
     .fifthPosition {
-      left: 95rem;
+      left: 97%;
+    }
+  }
+}
+
+@include desktop {
+  .separateContainer {
+    .shapeHoldr {
+      .firstSquare {
+        left: 12.2vw;
+      }
+
+      .secondSquare {
+        left: 28vw;
+      }
+
+      .thirdSquare {
+        left: 43.6vw;
+      }
+
+      .fourthSquare {
+        left: 59.4vw;
+      }
+
+      .fifthSquare {
+        left: 75vw;
+      }
+
+      .title {
+        font-size: 1.2rem;
+      }
+      // .secondPosition {
+      //   left: 54rem;
+      // }
+
+      // .thirdPosition {
+      //   left: 83rem;
+      // }
+
+      // .fourthPosition {
+      //   left: 90.8rem;
+      // }
+
+      // .fifthPosition {
+      //   left: 95rem;
+      // }
+    }
+  }
+}
+
+@include tabletMax {
+  .separateContainer {
+    .shapeHoldr {
+      .firstSquare {
+        left: 12.1vw;
+      }
+
+      .secondSquare {
+        left: 27.7vw;
+      }
+
+      .thirdSquare {
+        left: 43vw;
+      }
+
+      .fourthSquare {
+        left: 58.5vw;
+      }
+
+      .fifthSquare {
+        left: 74vw;
+      }
+
+      .title {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include tabletMin {
+  .separateContainer {
+    .shapeHoldr {
+      .firstSquare {
+        left: 5.5vw;
+      }
+
+      .secondSquare {
+        left: 22.4vw;
+      }
+
+      .thirdSquare {
+        left: 39.4vw;
+      }
+
+      .fourthSquare {
+        left: 56.3vw;
+      }
+
+      .fifthSquare {
+        left: 73.3vw;
+      }
+
+      .title {
+        display: none;
+      }
+    }
+  }
+}
+@include mobile {
+  .separateContainer {
+    .shapeHoldr {
+      .firstSquare {
+        left: 6.1vw;
+      }
+
+      .secondSquare {
+        left: 22.4vw;
+      }
+
+      .thirdSquare {
+        left: 38.6vw;
+      }
+
+      .fourthSquare {
+        left: 55vw;
+      }
+
+      .fifthSquare {
+        left: 71.3vw;
+      }
+    }
+  }
+}
+
+@include mobileMin {
+  .separateContainer {
+    .shapeHoldr {
+      .firstSquare {
+        left: 13vw;
+      }
+
+      .secondSquare {
+        left: 28.3vw;
+      }
+
+      .thirdSquare {
+        left: 44vw;
+      }
+
+      .fourthSquare {
+        left: 59.4vw;
+      }
+
+      .fifthSquare {
+        left: 75vw;
+      }
     }
   }
 }

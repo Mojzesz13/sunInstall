@@ -1,35 +1,5 @@
 @import 'src/scss/settings/colors';
 
-@mixin mobileMin() {
-  @media (max-width: 500px) {
-    @content;
-  }
-}
-
-@mixin mobile() {
-  @media (max-width: 767px) {
-    @content;
-  }
-}
-
-@mixin tabletMin() {
-  @media (max-width: 921px) {
-    @content;
-  }
-}
-
-@mixin tabletMax() {
-  @media (max-width: 1199px) {
-    @content;
-  }
-}
-
-@mixin desktop() {
-  @media (max-width: 1450px) {
-    @content;
-  }
-}
-
 @mixin title {
   margin: 4rem 0 0 2rem;
   font-size: 6rem;
@@ -42,5 +12,34 @@
 
   @include mobile {
     font-size: 3rem;
+  }
+}
+
+@mixin desktop() {
+  @media (max-width: 1450px) {
+    @content;
+  }
+}
+
+@mixin tabletMax() {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tabletMin() {
+  @media (max-width: 921px) {
+    @content;
+  }
+}
+@mixin mobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobileMin() {
+  @media (max-width: 500px) {
+    @content;
   }
 }

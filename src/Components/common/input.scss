@@ -32,10 +32,6 @@
 @include tabletMax {
   .inputHolder {
     width: 70%;
-
-    .inputContent {
-      min-width: 30rem;
-    }
     .errorMessage {
     }
   }
@@ -45,9 +41,6 @@
   .inputHolder {
     width: 80%;
 
-    .inputContent {
-      min-width: 30rem;
-    }
     .errorMessage {
     }
   }

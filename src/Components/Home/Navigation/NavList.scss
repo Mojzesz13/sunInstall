@@ -1,19 +1,19 @@
 @import 'src/scss/settings/mixins';
 
 .headerLinks {
-  width: 60vw;
+  width: 60%;
   margin-right: 2rem;
   display: flex;
   justify-content: space-evenly;
 
   .navItem {
     padding: 1rem 1rem;
-    cursor: pointer;
     font-size: 2rem;
+    cursor: pointer;
   }
 
   .navItem:hover {
-    background-color: $barContainerColor;
+    background-color: $navList;
     color: $logoColor;
     border-radius: 0.4rem;
     transition: all 0.2s ease-out;
@@ -30,13 +30,13 @@
     left: -100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: $navBackground;
     transition: all 0.5s ease;
     .navItem {
       margin: 0 1rem;
-      font-weight: 600;
-      background-color: $barContainerColor;
+      background-color: $navList;
       color: $logoColor;
+      font-weight: 600;
     }
   }
   .headerLinks.active {

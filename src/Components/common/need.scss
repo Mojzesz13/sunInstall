@@ -1,7 +1,7 @@
 @import 'src/scss/settings/mixins';
 
 .need {
-  width: 35rem;
+  width: 34rem;
   height: 30rem;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
 
 @include tabletMax {
   .need {
-    width: 30rem;
+    width: 28rem;
     height: 25rem;
   }
 }
@@ -47,7 +47,7 @@
 
 @include mobile {
   .need {
-    width: 20rem;
+    width: 22rem;
     height: 15rem;
     .icon {
       font-size: 3rem;

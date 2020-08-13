@@ -20,10 +20,7 @@ const Contact = () => {
 
   return (
     <div className="contactContainer" id="contact">
-      <SeparateBar
-        title="PIERWSZY KROK NALEŻY DO CIEBIE. ZAPRASZAMY DO KONTAKTU."
-        number="5"
-      />
+      <SeparateBar title="ZAPRASZAMY DO KONTAKTU." number="5" />
       <div className="barContainer">
         <p>PIERWSZY KROK NALEŻY DO CIEBIE. ZAPRASZAMY DO KONTAKTU.</p>
       </div>
