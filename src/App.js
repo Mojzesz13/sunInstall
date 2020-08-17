@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import './main.scss';
 import Home from './Components/Home/Home';
-import ScrollArrow from './Components/common/scrollUpButton';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
     <>
       <Router>
         <Home />
-        <ScrollArrow />
       </Router>
     </>
   );

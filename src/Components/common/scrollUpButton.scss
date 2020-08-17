@@ -1,15 +1,23 @@
+@import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
+
 .scrollTop {
   position: fixed;
   width: 100%;
-  bottom: 20px;
+  bottom: 4rem;
+  right: 2rem;
   align-items: center;
-  height: 20px;
-  justify-content: center;
+  height: 2rem;
+  justify-content: flex-end;
   z-index: 1000;
   cursor: pointer;
   animation: fadeIn 0.3s;
   transition: opacity 0.4s;
-  opacity: 0.5;
+  opacity: 0.6;
+
+  font-size: 7rem;
+  color: $barContainerColor;
+  // color: red;
 }
 
 .scrollTop:hover {
@@ -22,5 +30,13 @@
   }
   100% {
     opacity: 0.5;
+  }
+}
+
+@include mobile {
+  .scrollTop {
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 5rem;
   }
 }

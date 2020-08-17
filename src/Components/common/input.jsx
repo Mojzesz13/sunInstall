@@ -3,17 +3,19 @@ import './input.scss';
 
 const Input = ({ name, value, label, type, error, onChange }) => {
   return (
-    <div className="inputHolder">
+    <div className="inputContainer">
       <label htmlFor={name}>{label}</label>
-      <input
-        name={name}
-        value={value}
-        id={name}
-        onChange={onChange}
-        type={type}
-        className="inputContent"
-      />
-      {error && <div className="errorMessage">{error}</div>}
+      <div className="inputHolder">
+        <input
+          className="inputContent"
+          name={name}
+          value={value}
+          id={name}
+          onChange={onChange}
+          type={type}
+        />
+        {error && <div className="errorMessage">{error}</div>}
+      </div>
     </div>
   );
 };

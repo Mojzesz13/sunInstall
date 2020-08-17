@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-const element = <FontAwesomeIcon icon={faCoffee} />;
+import './scrollUpButton.scss';
 
 const ScrollArrow = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -27,7 +24,7 @@ const ScrollArrow = () => {
       onClick={scrollTop}
       style={{ height: 40, display: showScroll ? 'flex' : 'none' }}
     >
-      {element}{' '}
+      <i className="fas fa-angle-double-up" />
     </div>
   );
 };

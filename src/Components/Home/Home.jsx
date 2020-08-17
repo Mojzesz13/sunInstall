@@ -7,11 +7,13 @@ import Installation from './Installation/Installation';
 import Contact from './Contact/Contact';
 import Summary from './Summary/Summary';
 import './Home.scss';
+import ScrollArrow from '../common/scrollUpButton';
 
 const Home = () => {
   return (
     <div className="homeContainer" id="main">
       <Header />
+      <ScrollArrow />
       <Investition />
       <Need />
       <Hardware />

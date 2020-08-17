@@ -2,18 +2,17 @@
 @import 'src/scss/settings/colors';
 
 .separateContainer {
-  // width: 100%;
+  width: 100%;
   max-width: 190rem;
   height: 10rem;
-  margin: 0 auto;
   display: flex;
-  align-content: center;
+  justify-content: center;
   background-color: white;
 
   .shapeHoldr {
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    margin-right: 10%;
 
     .square {
       height: 4rem;
@@ -21,30 +20,41 @@
       position: relative;
       top: 3.1rem;
       right: 1rem;
-      transform: rotate(45deg);
+      transform: rotate(-45deg);
       border: 1px solid black;
       margin-left: 1.6rem;
       background-color: transparent;
-      z-index: 200 !important;
+      z-index: 200;
       content: '';
     }
 
-    // .test {
-    //   min-height: 4rem;
-    //   min-width: 4rem;
+    // img {
+    //   z-index: 100;
     //   position: relative;
-    //   bottom: 1rem;
-    //   right: 1rem;
-    //   display: flex;
-    //   justify-content: center;
-    //   border: 1px solid black;
-    //   background-color: $squareColor;
-
-    //   font-size: 3.5rem;
-    //   color: white;
-    //   content: '';
-    //   z-index: 100 !important;
+    //   height: 40rem;
+    //   min-width: 40rem;
+    //   background-color: red;
     // }
+
+    .test {
+      min-height: 4rem;
+      min-width: 4rem;
+      position: relative;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      background-color: $squareColor;
+      font-size: 3rem;
+      color: white;
+      content: '';
+      z-index: 100;
+      span {
+        transform: rotate(45deg);
+      }
+    }
 
     // .square:nth-child(2)::after {
     //   min-height: 4rem;
@@ -90,24 +100,24 @@
       background-color: black;
       content: '';
     }
-    .animation {
-      top: 2.4rem;
-      position: relative;
-      background-color: $squareColor;
-      z-index: 100;
-      display: flex;
-      justify-content: center;
-      border: none;
+    // .animation {
+    //   // top: 2.4rem;
+    //   top: 3rem;
+    //   background-color: $squareColor;
+    //   z-index: 100;
+    //   display: flex;
+    //   justify-content: center;
+    //   border: none;
 
-      span {
-        transform: rotate(-45deg);
-        color: white;
-        font-size: 3rem;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-      }
-    }
+    //   span {
+    //     transform: rotate(-5deg);
+    //     color: white;
+    //     font-size: 3rem;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-content: center;
+    //   }
+    // }
 
     .firstSquare {
       left: 12.45vw;
@@ -136,27 +146,30 @@
       top: 6rem;
       width: 20%;
       height: 4rem;
-    }
-    .firstPosition {
-      left: 17%;
-    }
-    .secondPosition {
-      left: 37%;
-    }
-
-    .thirdPosition {
-      left: 57%;
-    }
-
-    .fourthPosition {
-      left: 78%;
-    }
-
-    .fifthPosition {
-      left: 97%;
+      left: 18%;
     }
   }
 }
+//     .firstPosition {
+//       left: 17%;
+//     }
+//     .secondPosition {
+//       left: 37%;
+//     }
+
+//     .thirdPosition {
+//       left: 57%;
+//     }
+
+//     .fourthPosition {
+//       left: 78%;
+//     }
+
+//     .fifthPosition {
+//       left: 97%;
+//     }
+//   }
+// }
 
 @include desktop {
   .separateContainer {
