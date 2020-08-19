@@ -1,6 +1,6 @@
 import React from 'react';
 import './Investition.scss';
-import SeparateBar from '../../common/separateBar';
+import SeparateBar from '../../common/separateBar/separateBar';
 
 const Investition = () => {
   return (

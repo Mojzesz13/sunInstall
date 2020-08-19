@@ -1,6 +1,6 @@
 import React from 'react';
 import './Installation.scss';
-import SeparateBar from '../../common/separateBar';
+import SeparateBar from '../../common/separateBar/separateBar4';
 import TextContainer from '../../common/textContainer';
 import firstPhoto from '../../../assets/workerFirst.jpg';
 import secendPhoto from '../../../assets/workerSecond.jpg';

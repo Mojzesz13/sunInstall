@@ -34,25 +34,18 @@
     .inputContent {
       min-width: 30rem;
     }
-    .errorMessage {
-    }
   }
 }
 
 @include tabletMax {
   .inputContainer {
     width: 70%;
-    .errorMessage {
-    }
   }
 }
 
 @include tabletMin {
   .inputContainer {
     width: 80%;
-
-    .errorMessage {
-    }
   }
 }
 
@@ -64,8 +57,6 @@
     .inputHolder {
       .inputContent {
         min-width: 20rem;
-      }
-      .errorMessage {
       }
     }
   }

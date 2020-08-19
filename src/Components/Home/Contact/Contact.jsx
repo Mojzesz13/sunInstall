@@ -1,6 +1,96 @@
+// import React, { useState } from 'react';
+// import './Contact.scss';
+// import SeparateBar from '../../common/separateBar';
+// import Input from '../../common/input';
+// import { Formik, Field, Form, useField } from 'formik';
+// import { Checkbox, TextField } from '@material-ui/core';
+// import { green } from '@material-ui/core/colors';
+// import { makeStyles } from '@material-ui/core/styles';
+
+// const Contact = () => {
+//   const [data, setData] = useState({
+//     personalDate: '',
+//     phoneNumber: '',
+//     city: '',
+//     message: '',
+//     checkbox: '',
+//   });
+//   const [errors, setErrors] = useState('');
+
+//   // const MyTextField: React.FC<FieldAttributes<{}>> = (props) => {
+//   //   const [field, meta] = useField < {} > props;
+//   //   const errorText = meta.error && meta.touched ? meta.error : '';
+//   //   return <TextField {...field} helperText={errorText} />;
+//   // };
+
+//   return (
+//     <div className="contactContainer" id="contact">
+//       <SeparateBar title="ZAPRASZAMY DO KONTAKTU." number="5" />
+//       <div className="barContainer">
+//         <p>PIERWSZY KROK NALEŻY DO CIEBIE. ZAPRASZAMY DO KONTAKTU.</p>
+//       </div>
+//       <h1>Formularz kontaktowy</h1>
+//       <Formik
+//         initialValues={{
+//           personalDate: '',
+//           phoneNumber: '',
+//           city: '',
+//           message: '',
+//           acceptTerms: false,
+//         }}
+//         onSubmit={(data) => {
+//           console.log('submit', data);
+//         }}
+//       >
+//         {({ values }) => (
+//           <Form className="formContainer">
+//             <Field
+//               className="test"
+//               labelPlacement="start"
+//               name="personalDate"
+//               label="Imię i nazwisko"
+//               type="input"
+//               as={TextField}
+//               variant="outlined"
+//             />
+//             <Field
+//               name="phoneNumber"
+//               label="Numer telefonu"
+//               type="input"
+//               as={TextField}
+//             />
+//             <Field
+//               name="city"
+//               label="Miejscowość"
+//               type="input"
+//               as={TextField}
+//             />
+//             <Field
+//               name="message"
+//               label="Wiadomość"
+//               type="input"
+//               as={TextField}
+//             />
+//             <div className="buttonContainer">
+//               <button type="submit">WYŚLIJ</button>
+//               <Field name="acceptTerms" type="checkbox" />
+//               <p>
+//                 Akceptuję politykę prywatności<span>RODO</span>
+//               </p>
+//             </div>
+//             <pre>{JSON.stringify(values, null, 2)}</pre>
+//           </Form>
+//         )}
+//       </Formik>
+//     </div>
+//   );
+// };
+
+// export default Contact;
+
 import React, { useState } from 'react';
 import './Contact.scss';
-import SeparateBar from '../../common/separateBar';
+import SeparateBar from '../../common/separateBar/separateBar5';
 import Input from '../../common/input';
 import Joi from 'joi-browser';
 

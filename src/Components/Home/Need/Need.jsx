@@ -1,6 +1,6 @@
 import React from 'react';
 import './Need.scss';
-import SeparateBar from '../../common/separateBar';
+import SeparateBar from '../../common/separateBar/separateBar2';
 import NeedSection from '../../common/need';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';

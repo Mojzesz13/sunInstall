@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hardware.scss';
-import SeparateBar from '../../common/separateBar';
+import SeparateBar from '../../common/separateBar/separateBar3';
 
 const Hardware = () => {
   return (
