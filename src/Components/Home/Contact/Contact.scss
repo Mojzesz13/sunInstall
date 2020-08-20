@@ -3,7 +3,7 @@
 
 .contactContainer {
   width: 100%;
-  height: 70rem;
+  height: 80rem;
   // background-image: url('../../../assets/contactBackground.jpg');
   background-position: center top;
   background-size: cover;
@@ -30,64 +30,68 @@
     font-size: 2rem;
     font-weight: 700;
 
-    .inputContainer {
-      textarea {
-        min-width: 40rem;
-        border: 1px solid black;
-        background-color: transparent;
-      }
+    .MuiOutlinedInput-root {
+      width: 30rem;
+    }
+  }
+  //   .inputContainer {
+  //     textarea {
+  //       min-width: 40rem;
+  //       border: 1px solid black;
+  //       background-color: transparent;
+  //     }
+  //   }
+
+  .buttonContainer {
+    width: 60%;
+    margin: 3% 0 0 35%;
+    display: flex;
+    align-items: center;
+
+    button {
+      width: 12rem;
+      height: 4rem;
+      background-color: $barContainerColor;
+      border: none;
+      font-size: 2rem;
+    }
+    button:hover {
+      border: 0.1rem solid black;
+      background-color: $navList;
+      border-radius: 0.4rem;
     }
 
-    .buttonContainer {
+    input {
+      width: 5%;
+      margin-left: 7rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+      font-weight: 600;
       width: 60%;
-      margin: 3% 0 0 35%;
-      display: flex;
-      align-items: center;
-
-      button {
-        width: 12rem;
-        height: 4rem;
-        background-color: $barContainerColor;
-        border: none;
+      span {
+        color: $barContainerColor;
         font-size: 2rem;
-      }
-      button:hover {
-        border: 0.1rem solid black;
-        background-color: $navList;
-        border-radius: 0.4rem;
-      }
-
-      input {
-        width: 5%;
-        margin-left: 7rem;
-      }
-
-      p {
-        font-size: 1.7rem;
-        font-weight: 600;
-        width: 60%;
-        span {
-          color: $barContainerColor;
-          font-size: 2rem;
-          font-weight: 700;
-        }
+        font-weight: 700;
       }
     }
   }
+  // }
 
-  .formContainer:before {
-    height: 5rem;
-    min-width: 5rem;
-    position: relative;
-    top: 20%;
-    left: -1%;
-    justify-content: center;
-    background-color: $squareColor;
-    z-index: 100;
-    border: none;
-    transform: rotate(45deg);
-    content: '';
-  }
+  // .formContainer:before {
+  //   height: 5rem;
+  //   min-width: 5rem;
+  //   position: relative;
+  //   top: 20%;
+  //   left: -1%;
+  //   justify-content: center;
+  //   background-color: $squareColor;
+  //   z-index: 100;
+  //   border: none;
+  //   transform: rotate(45deg);
+  //   content: '';
+  // }
 }
 
 @include desktop {

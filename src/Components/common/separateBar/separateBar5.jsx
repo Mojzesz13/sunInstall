@@ -35,7 +35,6 @@ const SeparateBar = ({ title, number }) => {
         <div className="square" />
         <div className="line" />
         <div className="square" />
-
         <div className="line" />
         <div className="square" />
         <div className="line" />
