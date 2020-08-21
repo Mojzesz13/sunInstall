@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './NavList.scss';
 
-const NavList = ({ click, dropdown }) => {
+const NavList = ({ click }) => {
   return (
     <nav className={click ? 'headerLinks active' : 'headerLinks'}>
       <Link

@@ -1,4 +1,5 @@
 @import 'src/scss/settings/mixins';
+@import 'src/scss/settings/colors';
 
 .headerLinks {
   width: 60%;
@@ -13,8 +14,8 @@
   }
 
   .navItem:hover {
-    background-color: $navList;
-    color: $logoColor;
+    background-color: $barContainerColor;
+    color: $fontTitleColor;
     border-radius: 0.4rem;
     transition: all 0.2s ease-out;
   }
@@ -35,7 +36,7 @@
     .navItem {
       margin: 0 1rem;
       background-color: $navList;
-      color: $logoColor;
+      color: $fontTitleColor;
       font-weight: 600;
     }
   }

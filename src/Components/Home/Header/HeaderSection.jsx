@@ -5,7 +5,7 @@ import BarContainer from '../../common/barContainer';
 
 const HeaderSection = () => {
   const text =
-    'Pierwsze zdjęcie do zmiany, zastanowić się gdzie wstawić domek ruderkę i z jaką treścią';
+    'Zapewniamy kompleksową obsługę - od audytu, przez montaż, aż po pomoc w uzyskaniu dofinansowania.';
 
   return (
     <div className="header">

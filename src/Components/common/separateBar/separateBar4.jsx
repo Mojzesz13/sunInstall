@@ -36,6 +36,8 @@ const SeparateBar = ({ title, number }) => {
         <div className="line" />
         <div className="square" />
         <div className="line" />
+        <div className="square"> </div>
+        <div className="line" />
         <div className="square">
           {' '}
           <div
@@ -45,8 +47,6 @@ const SeparateBar = ({ title, number }) => {
             <span> {number}</span>
           </div>
         </div>
-        <div className="line" />
-        <div className="square" />
         <div className="line" />
         <div className="square" />
       </div>

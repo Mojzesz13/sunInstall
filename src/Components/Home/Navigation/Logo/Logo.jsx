@@ -1,11 +1,12 @@
 import React from 'react';
 import './Logo.scss';
+import logo from './../../../../assets/LogoSunInstall.png';
 
 const Logo = () => {
   return (
-    <h1 className="logo">
-      <span>SUN </span>Install
-    </h1>
+    <div className="logo">
+      <img src={logo} alt="logo Suninstall" />
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.scss';
 import SeparateBar from '../../common/separateBar/separateBar5';
 import { Formik, useField, Form } from 'formik';
@@ -37,12 +37,27 @@ const CustomCheckbox = ({ children, ...props }) => {
   );
 };
 
+const TextArea = ({ label, ...props }) => {
+  const [field] = useField(props);
+  return (
+    <TextField
+      {...field}
+      label={label}
+      variant="outlined"
+      margin="normal"
+      {...field}
+      multiline
+      rowsMax={10}
+    />
+  );
+};
+
 const Contact = () => {
   return (
     <div className="contactContainer" id="contact">
       <SeparateBar title="ZAPRASZAMY DO KONTAKTU." number="5" />
       <div className="barContainer">
-        <p>PIERWSZY KROK NALEŻY DO CIEBIE. ZAPRASZAMY DO KONTAKTU.</p>
+        <p>Pierwszy krok należy do ciebie. Zapraszamy do kontaktu.</p>
       </div>
       <h1>Formularz kontaktowy</h1>
       <Formik
@@ -55,26 +70,27 @@ const Contact = () => {
         }}
         validationSchema={Yup.object({
           personalDate: Yup.string()
-            .typeError('bez CYFERek')
-            .min(6, 'podaj imie')
-            .max(20, 'miał byc poprawny kolego')
-            .required('wymagane i to bardzo '),
+            .typeError('Akceptujemy tylko litert')
+            .min(6, 'Minimum 6 znaków')
+            .max(40, 'Maxymalnie 30 znaków')
+            .required('Pole obowiązkowe'),
           phoneNumber: Yup.number()
             .typeError('MAL BYC NUMERRTYLK CYFERKI')
-            .min(6, 'podaj poprawy nr')
-            .max(20, 'miał byc poprawny kolego')
-            .required('wymagane'),
+            .min(6, 'Minimum 6 znaków')
+            // .max(20, 'Maxymalnie 30 znaków')
+            .required('Pole obowiązkowe'),
           acceptTerms: Yup.boolean()
-            .required('musisz sie zgadzac ')
-            .oneOf([true], 'no co jest z a zgoda'),
+            .required('Pole obowiązkowe ')
+            .oneOf([true], 'Pole obowiązkowe'),
         })}
         onSubmit={(values, { setSubmitting, resetForm }) => {
           resetForm();
+          console.log(values);
           setSubmitting(false);
         }}
       >
         {(props) => (
-          <Form>
+          <Form className="formContainer">
             <CustomTextInput
               label="Imię i nazwisko"
               name="personalDate"
@@ -86,13 +102,14 @@ const Contact = () => {
               type="text"
             />
             <CustomTextInput label="Miejscowość" name="city" type="text" />
-
+            <TextArea label="Wiadomość" name="message" type="text" />
             <div className="buttonContainer">
-              <button type="submit">WYŚLIJ</button>
               <CustomCheckbox name="acceptTerms">
                 Akceptuję politykę prywatności<span>RODO</span>
               </CustomCheckbox>
+              <button type="submit">WYŚLIJ</button>
             </div>
+            {/* <pre>{JSON.stringify(values, null, 2)}</pre> */}
           </Form>
         )}
       </Formik>
@@ -101,92 +118,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// const Contact = () => {
-//   return (
-//     <div className="contactContainer" id="contact">
-//       <SeparateBar title="ZAPRASZAMY DO KONTAKTU." number="5" />
-//       <div className="barContainer">
-//         <p>PIERWSZY KROK NALEŻY DO CIEBIE. ZAPRASZAMY DO KONTAKTU.</p>
-//       </div>
-//       <h1>Formularz kontaktowy</h1>
-//       <Formik
-//         initialValues={{
-//           personalDate: '',
-//           phoneNumber: '',
-//           city: '',
-//           message: '',
-//           acceptTerms: false,
-//         }}
-//         validationSchema={Yup.object({
-//           personalDate: Yup.string()
-//             .min(5, 'minimum 5 znaków')
-//             .max(30, 'maxymalnie 20 znaków')
-//             .required('kolego pole jest wymagane'),
-//           phoneNumber: Yup.number()
-//             .typeError('MAL BYC NUMERRTYLK CYFERKI')
-//             .min(6, 'podaj poprawy nr')
-//             .max(20, 'miał byc poprawny kolego')
-//             .required('wymagane'),
-//           acceptTerms: Yup.boolean()
-//             .required('musisz sie zgadzac ')
-//             .oneOf([true], 'no co jest z a zgoda'),
-//         })}
-//         onSubmit={(data, { setSubmitting }) => {
-//           setSubmitting(true);
-//           console.log('submit', data);
-//           setSubmitting(false);
-//         }}
-//       >
-//         {({ values, errors, isSubmitting }) => (
-//           <Form className="formContainer">
-//             <Field
-//               name="personalDate"
-//               label="Imię i nazwisko"
-//               type="input"
-//               variant="outlined"
-//               margin="normal"
-//               as={TextField}
-//             />
-//             <Field
-//               name="phoneNumber"
-//               label="Numer telefonu"
-//               type="input"
-//               variant="outlined"
-//               margin="normal"
-//               as={TextField}
-//             />
-//             <Field
-//               name="city"
-//               label="Miejscowość"
-//               type="input"
-//               variant="outlined"
-//               margin="normal"
-//               as={TextField}
-//             />
-//             <Field
-//               name="message"
-//               label="Wiadomość"
-//               type="input"
-//               variant="outlined"
-//               margin="normal"
-//               as={TextField}
-//             />
-
-//             <div className="buttonContainer">
-//               <button type="submit">WYŚLIJ</button>
-//               <Field name="acceptTerms" type="checkbox" />
-//               <p>
-//                 Akceptuję politykę prywatności<span>RODO</span>
-//               </p>
-//             </div>
-//             <pre>{JSON.stringify(values, null, 2)}</pre>
-//             <pre>{JSON.stringify(errors, null, 2)}</pre>
-//           </Form>
-//         )}
-//       </Formik>
-//     </div>
-//   );
-// };
-
-// export default Contact;

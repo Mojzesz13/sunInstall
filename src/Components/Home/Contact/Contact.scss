@@ -3,13 +3,13 @@
 
 .contactContainer {
   width: 100%;
-  height: 80rem;
+  max-height: 95rem;
+  display: flex;
+  flex-direction: column;
   // background-image: url('../../../assets/contactBackground.jpg');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
 
   .barContainer {
     align-self: flex-start;
@@ -20,65 +20,53 @@
   }
 
   .formContainer {
-    margin-top: 1%;
     width: 80%;
+    margin-top: 1%;
     display: flex;
     align-self: center;
     align-items: center;
     flex-direction: column;
     background-color: transparent;
-    font-size: 2rem;
-    font-weight: 700;
 
-    .MuiOutlinedInput-root {
-      width: 30rem;
+    input {
+      width: 35rem;
+      background-color: white;
     }
   }
-  // .inputContainer {
-  //   textarea {
-  //     min-width: 40rem;
-  //     border: 1px solid black;
-  //     background-color: transparent;
-  //   }
-  // }
+  TextArea {
+    width: 35rem;
+    min-height: 8rem;
+    max-height: 10rem;
+  }
 
   .buttonContainer {
     width: 60%;
-    margin: 3% 0 0 35%;
+    margin: 2rem 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    font-size: 1.5rem;
 
     button {
-      width: 12rem;
-      height: 4rem;
-      background-color: $barContainerColor;
-      border: none;
-      font-size: 2rem;
+      @include button;
     }
-    button:hover {
-      border: 0.1rem solid black;
-      background-color: $navList;
-      border-radius: 0.4rem;
-    }
-
-    input {
-      width: 5%;
-      margin-left: 7rem;
-    }
-
-    p {
-      font-size: 1.7rem;
-      font-weight: 600;
-      width: 60%;
+    .checkbox {
+      input {
+        width: 5rem;
+      }
       span {
+        margin: 0.5rem;
         color: $barContainerColor;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
       }
     }
-  }
-  .error {
-    color: red;
+    .error {
+      position: relative;
+      bottom: -1rem;
+      right: 0;
+      color: red;
+    }
   }
 }
 
@@ -117,12 +105,17 @@
   .contactContainer {
     .formContainer {
       width: 95%;
-      .formContainer:before {
-        left: 40%;
+      input {
+        width: 25rem;
+      }
+      TextArea {
+        width: 25rem;
+        min-height: 8rem;
+        max-height: 10 rem;
       }
       .buttonContainer {
         width: 100%;
-        margin: 2rem 0 0 2rem;
+        margin: 2rem 0 2 0rem;
         display: flex;
         align-items: center;
 
@@ -130,20 +123,19 @@
           width: 5%;
           margin-left: 1rem;
         }
-
-        p {
-          margin-left: 1rem;
-          span {
-            color: $barContainerColor;
-            font-size: 2rem;
-            font-weight: 700;
-          }
-        }
       }
-      .inputContainer {
-        textarea {
-          min-width: 19rem;
-          max-width: 27rem;
+      .formContainer:before {
+        left: 40%;
+      }
+      .checkbox {
+        input {
+          width: 3rem;
+        }
+        span {
+          margin: 0.5rem;
+          color: $barContainerColor;
+          font-size: 1.5rem;
+          font-weight: 700;
         }
       }
     }

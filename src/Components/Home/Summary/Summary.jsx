@@ -1,7 +1,7 @@
 import React from 'react';
 import './Summary.scss';
 import BarContainer from '../../common/barContainer';
-import Logo from '../../../assets/logo2.jpg';
+import logo from '../../../assets/LogoSunInstall.png';
 
 const Summary = () => {
   const text = 'Zyskaj pełną niezależność z własną instalacją fotowoltaiczną.';
@@ -10,7 +10,7 @@ const Summary = () => {
     <div className="summaryContainer" id="summary">
       <BarContainer text={text} />
       <div className="summaryContent">
-        <img src={Logo} alt="logo" />
+        <img src={logo} alt="logo sun Install" />
         <h1>
           SUN<span>INSTALL</span>
         </h1>
