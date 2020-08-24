@@ -11,13 +11,13 @@
     padding: 1rem 1rem;
     font-size: 2rem;
     cursor: pointer;
-  }
 
-  .navItem:hover {
-    background-color: $barContainerColor;
-    color: $fontTitleColor;
-    border-radius: 0.4rem;
-    transition: all 0.2s ease-out;
+    &:hover {
+      background-color: $barContainerColor;
+      color: $fontTitleColor;
+      border-radius: 0.4rem;
+      transition: all 0.2s ease-out;
+    }
   }
 }
 

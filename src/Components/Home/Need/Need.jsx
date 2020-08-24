@@ -7,19 +7,20 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const caffe = <FontAwesomeIcon icon={faCoffee} />;
 
-const firstTitle = 'ODNAWIALNE ŹRÓDŁO ENERGII';
-const secondTitle = 'DBAŁOŚĆ O ŚRODOWISKO';
-const thirdTitle = 'NIEZALEŻNOŚĆ';
-const forthTitle = 'ESTETYKA WYKONANIA';
-const fifthTitle = 'PODNIESIENIE WARTOŚCI NIERUCHOMOŚCI';
-const sixTitle = 'ŁATWY I SZYBKI MONTAŻ';
+const firstTitle = 'DOFINANSOWANIE';
+const secondTitle = 'NIEZALEŻNOŚĆ';
+const thirdTitle = 'PODNIESIENIE WARTOŚCI NIERUCHOMOŚCI';
+const forthTitle = 'WYSOKA WYDAJNOŚĆ';
+const fifthTitle = 'DBAŁOŚĆ O ŚRODOWISKO';
+const sixTitle = 'ODNAWIALNE ŹRÓDŁO ENERGII';
 
-const firstText = 'energia słoneczna jest niewyczerpalna';
-const secondText = 'redukcja CO2 praktycznie do zera';
-const thirdText = 'staniesz się producentem energii';
-const forthText = 'dopasujemy panele do Twojego dachu i gustu';
-const fifthText = 'Twój dom zyska na wartości';
-const sixText = 'nie jest wymagane pozwolenie na budowę';
+const firstText = 'Pomożemy uzyskać Ci dofinansowanie do 5 tys. zł';
+const secondText = 'Zapewnij sobie niezależność energetyczną';
+const thirdText = 'Twój dom zyska na wartości';
+const forthText =
+  'Panele fotowoltaiczne produkują energię także w pochmurne dni';
+const fifthText = 'Redukcja CO2 praktycznie do zera';
+const sixText = 'Uzyskujesz energię przez cały rok';
 
 const Need = () => {
   return (

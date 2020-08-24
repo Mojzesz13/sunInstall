@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.scss';
-import NavList from './navList';
+import NavList from './NavList';
 import Logo from './Logo/Logo';
 
 const NavBar = () => {

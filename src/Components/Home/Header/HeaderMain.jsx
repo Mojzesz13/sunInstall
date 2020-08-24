@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '../Navigation/navBar';
 import HeaderSection from './HeaderSection';
 import './HeaderMain.scss';
+import NavBar from '../Navigation/NavBar';
 
 const Header = () => {
   return (

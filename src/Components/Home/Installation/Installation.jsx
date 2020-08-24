@@ -8,22 +8,13 @@ import thirdPhoto from '../../../assets/workerFirst.jpg';
 
 const Installation = () => {
   const firstParagraph = (
-    <p>
-      <span>Zamień rachunek za prąd </span> na spłatę paneli fotowoltaicznych,
-      by później cieszyć się darmowym prądem.
-    </p>
+    <p>Zamień rachunek za prąd na energię z paneli fotowoltaicznych.</p>
   );
   const secondParagraph = (
-    <p>
-      <span> Część lub całość inwestycji </span> możesz spłacić w ratach, a
-      nawet otrzymać dofinansowanie.
-    </p>
+    <p>Zainwestuj w instalację i otrzymaj dofinansowanie do 5 tys. zł.</p>
   );
   const thirdParagraph = (
-    <p>
-      <span>To my załatwiamy nielubiane formalności.</span>A Ty możesz na
-      spokojnie zastanowić się, na co wydasz zaoszczędzone pieniądze.
-    </p>
+    <p>To my załatwiamy nielubiane formalności. Ciesz się energią ze słońca!</p>
   );
 
   return (

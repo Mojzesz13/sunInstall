@@ -5,14 +5,14 @@
   height: 70rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: transparent;
 
   .sloganContainer {
     height: 15rem;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: column;
     p {
       width: 50%;
@@ -21,6 +21,13 @@
       color: whitesmoke;
       text-align: center;
     }
+  }
+
+  .navItem {
+    @include button();
+    width: 22rem;
+    margin: 0 0 1rem 0;
+    align-self: center;
   }
 }
 

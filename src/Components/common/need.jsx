@@ -5,8 +5,10 @@ const NeedSection = ({ icon, title, text }) => {
   return (
     <div className="need">
       <div className="icon">{icon}</div>
-      <div className="title">{title}</div>
-      <div className="text">{text}</div>
+      <div className="text">
+        <h1>{title}</h1>
+        <p>{text}</p>
+      </div>
     </div>
   );
 };
