@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './NavBar.scss';
 import NavList from './NavList';
 import Logo from './Logo/Logo';
+import Hamburger from './../../common/hamburger';
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -15,7 +16,7 @@ const NavBar = () => {
         <Logo />
       </Link>
       <div className="menuIcon" onClick={handleOnClick}>
-        <i className={click ? 'fa fa-times' : 'fas fa-bars'} />
+        <Hamburger click={click} />
       </div>
       <NavList click={click} />
     </nav>

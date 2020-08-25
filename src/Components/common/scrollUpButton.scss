@@ -2,12 +2,12 @@
 @import 'src/scss/settings/colors';
 
 .scrollTop {
+  height: 2rem;
+  width: 5%;
   position: fixed;
-  width: 10%;
   bottom: 4rem;
   right: 2rem;
   align-items: center;
-  height: 2rem;
   justify-content: flex-end;
   z-index: 1000;
   cursor: pointer;
