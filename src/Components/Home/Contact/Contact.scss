@@ -11,46 +11,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-
   .barContainer {
     align-self: flex-start;
   }
-
   h1 {
     @include title;
   }
-
-  // .test {
-  //   position: absolute;
-  //   bottom: 32%;
-  //   right: 12%;
-  // }
-
-  // .messageInstruction {
-  //   width: 20rem;
-  //   position: absolute;
-  //   bottom: 22rem;
-  //   background-color: rgba(0, 0, 0, 0.6);
-  //   color: white;
-  //   font-size: 1.5rem;
-  //   align-self: flex-end;
-  //   transition: all 0.5s ease;
-  //   display: flex;
-  //   visibility: hidden;
-  // }
-
-  // .active {
-  //   visibility: visible;
-  // }
   .tableContainer {
     display: flex;
     flex-direction: row;
     margin-top: 1%;
-
     .contact {
       background-color: red;
     }
-
     .formContainer {
       width: 50%;
       height: 55rem;
@@ -58,7 +31,6 @@
       align-items: center;
       flex-direction: column;
       // background-color: transparent;
-
       input {
         width: 35rem;
         background-color: white;
@@ -80,7 +52,6 @@
       flex-direction: column;
       align-items: center;
       font-size: 1.5rem;
-
       button {
         @include button;
       }
