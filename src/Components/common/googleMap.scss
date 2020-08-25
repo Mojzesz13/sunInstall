@@ -2,7 +2,24 @@
 @import 'src/scss/settings/colors';
 
 .mapContainer {
-  color: yellow;
   width: 50%;
-  background-color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .mapSection {
+    width: 80%;
+  }
+  .textSection {
+    width: 80%;
+    margin: 2rem 0 0 10%;
+    background-color: $barContainerColor;
+    font-size: 2rem;
+    align-self: flex-start;
+
+    p {
+      height: 3rem;
+      margin: 0.5rem 0 0 0.5rem;
+    }
+  }
 }
