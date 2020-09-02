@@ -18,9 +18,9 @@ const GoogleMapTest = () => {
         <Marker position={{ lat: 51.83664, lng: 16.57632 }}>
           <InfoWindow>
             <div>
-              <p>SUN Install</p>
-              <p>ul.LIPOWA 26 </p>
-              <p>LESZNO 64-100</p>
+              <p>SunInstall</p>
+              <p>ul.Lipowa 26 </p>
+              <p>Leszno 64-100</p>
             </div>
           </InfoWindow>
         </Marker>
@@ -40,7 +40,7 @@ const GoogleMapTest = () => {
       </div>
       <div className="textSection">
         <p>Telefon: 575-009-210</p>
-        <p>E-mail: biuro@suninstall.pl</p>
+        <a href="mailto:biuro@suninslall.pl">biuro@suninslall.pl</a>
         <p>Adres: ul.Lipowa 26, Leszno 64-100 </p>
       </div>
     </div>

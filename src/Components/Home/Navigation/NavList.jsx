@@ -13,7 +13,7 @@ const NavList = ({ click }) => {
         smooth={true}
         duration={500}
       >
-        Investition
+        Strona główna
       </Link>
       <Link
         className="navItem"
@@ -23,7 +23,7 @@ const NavList = ({ click }) => {
         smooth={true}
         duration={500}
       >
-        Potrzeby
+        Twoja inwestycja
       </Link>
       <Link
         className="navItem"
@@ -33,7 +33,7 @@ const NavList = ({ click }) => {
         smooth={true}
         duration={500}
       >
-        Hardware
+        Dlaczego warto?
       </Link>
       <Link
         className="navItem"
@@ -43,7 +43,7 @@ const NavList = ({ click }) => {
         smooth={true}
         duration={500}
       >
-        Installation
+        Dotacja
       </Link>
       <Link
         className="navItem"
@@ -53,7 +53,7 @@ const NavList = ({ click }) => {
         smooth={true}
         duration={500}
       >
-        Contact
+        Kontakt
       </Link>
       <Link
         className="navItem"
