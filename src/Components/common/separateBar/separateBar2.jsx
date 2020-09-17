@@ -1,12 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SeparateBar.scss';
-import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const SeparateBar = ({ title, number }) => {
+  const [slideDown, setSlideDown] = useState(false);
+
+  const handelScroll = () => {
+    let viewPosition = window.scrollY;
+    if (viewPosition <= 750) {
+      setSlideDown(true);
+    } else if (viewPosition > 800) {
+      setSlideDown(false);
+    }
+  };
+
   useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+    window.addEventListener('scroll', handelScroll);
+    return () => {
+      window.addEventListener('scroll', handelScroll);
+    };
+  });
 
   let ActiveSquare = '';
   switch (number) {
@@ -34,11 +47,10 @@ const SeparateBar = ({ title, number }) => {
         <div className="title">{title}</div>
         <div className="square" />
         <div className="line" />
-        <div className="square">
-          <div
-            className={`AnimationSquare " ${ActiveSquare}`}
-            data-aos="slide-left"
-          >
+        <div
+          className={slideDown ? 'square second' : 'square secon animationTest'}
+        >
+          <div className={`AnimationSquare " ${ActiveSquare}`}>
             <span> {number}</span>
           </div>
         </div>

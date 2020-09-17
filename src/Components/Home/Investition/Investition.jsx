@@ -9,7 +9,7 @@ const Investition = () => {
       <div>
         <div className="investitionContainer">
           <p>
-            Zapewnij sobie i twoim bliskim niezależność energetyczną. Pozwól, by
+            Zapewnij sobie i Twoim bliskim niezależność energetyczną. Pozwól, by
             Twój dom zyskał dobrą energię, a my załatwimy wszystkie formalności.
           </p>
         </div>

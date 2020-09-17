@@ -13,7 +13,6 @@
     width: 80%;
     display: flex;
     margin-right: 10%;
-
     .square {
       height: 4rem;
       min-width: 4rem;
@@ -26,25 +25,50 @@
       background-color: transparent;
       z-index: 200;
       content: '';
-    }
-
-    .AnimationSquare {
-      min-height: 4rem;
-      min-width: 4rem;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid black;
-      background-color: $squareColor;
-      font-size: 3rem;
-      color: white;
-      z-index: 100;
-      span {
-        transform: rotate(45deg);
+      .AnimationSquare {
+        min-height: 4rem;
+        min-width: 4rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $squareColor;
+        font-size: 3rem;
+        color: white;
+        z-index: 100;
+        left: 50%;
+        bottom: 50%;
+        span {
+          transform: rotate(45deg);
+        }
+        animation: mymove1 2s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes mymove1 {
+        from {
+          bottom: 0;
+          left: 0;
+        }
+        to {
+          bottom: 50%;
+        }
       }
     }
-
+    .animationTest {
+      .AnimationSquare {
+        animation: mymove2 2s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes mymove2 {
+        from {
+          bottom: 50%;
+        }
+        to {
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
     .line {
       align-self: center;
       width: 20.5vw;
@@ -55,27 +79,6 @@
       background-color: black;
       content: '';
     }
-
-    .firstSquare {
-      left: 12.45vw;
-    }
-
-    .secondSquare {
-      left: 28.25vw;
-    }
-
-    .thirdSquare {
-      left: 44.1vw;
-    }
-
-    .fourthSquare {
-      left: 59.95vw;
-    }
-
-    .fifthSquare {
-      left: 78.6vw;
-    }
-
     .title {
       height: 3rem;
       position: relative;

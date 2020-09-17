@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  // background-color: transparent;
   input {
     width: 35rem;
     background-color: white;
@@ -31,15 +30,21 @@
   button {
     @include button;
   }
-  .checkbox {
-    input {
-      width: 5rem;
+
+  .termsContainer {
+    flex-direction: row;
+    width: 60%;
+    .checkbox {
+      input {
+        width: 5rem;
+      }
     }
-    span {
+    .rodoPolicy {
       margin: 0.5rem;
       color: $barContainerColor;
       font-size: 1.5rem;
       font-weight: 700;
+      cursor: pointer;
     }
   }
   .error {

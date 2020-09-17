@@ -66,7 +66,7 @@ const CustomTooltip = withStyles(() => ({
 const tooltipText =
   'Prosimy, abyś w wiadomości podał nam więcej informacji o inwestycji, np. jej planowana wielkość (jeśli wiesz), planowany czas realizacji itp.';
 
-const ContactForm = () => {
+const ContactForm = ({ handleOpenPolicy }) => {
   return (
     <Formik
       initialValues={{
@@ -122,9 +122,13 @@ const ContactForm = () => {
             </CustomTooltip>
           </div>
           <div className="buttonContainer">
-            <CustomCheckbox name="acceptTerms">
-              Akceptuję politykę prywatności<span>RODO</span>
-            </CustomCheckbox>
+            <div className="termsContainer">
+              <CustomCheckbox name="acceptTerms"></CustomCheckbox>
+              Akceptuję politykę prywatności
+              <span className="rodoPolicy" onClick={handleOpenPolicy}>
+                RODO
+              </span>
+            </div>
             <button type="submit">WYŚLIJ</button>
           </div>
         </Form>
