@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './SeparateBar.scss';
-import 'aos/dist/aos.css';
 
 const SeparateBar = ({ title, number }) => {
   const [slideDown, setSlideDown] = useState(false);

@@ -10,7 +10,7 @@ const Footer = () => {
         <a href="mailto:biuro@suninslall.pl">biuro@suninslall.pl</a>
       </div>
       <a href="https://www.facebook.com/SUN-Install-105339907936880">
-        <i className="fab fa-facebook-square" />
+        <i className="fab fa-facebook-square fa-2x" />
       </a>
     </div>
   );

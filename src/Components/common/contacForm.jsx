@@ -5,6 +5,7 @@ import { TextField, Tooltip, IconButton } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import InfoIcon from '@material-ui/icons/Info';
 import * as Yup from 'yup';
+import emailjs from 'emailjs-com';
 
 const CustomTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
@@ -67,6 +68,7 @@ const tooltipText =
   'Prosimy, abyś w wiadomości podał nam więcej informacji o inwestycji, np. jej planowana wielkość (jeśli wiesz), planowany czas realizacji itp.';
 
 const ContactForm = ({ handleOpenPolicy }) => {
+  // const [data, setData] = useState('');
   return (
     <Formik
       initialValues={{
@@ -91,9 +93,28 @@ const ContactForm = ({ handleOpenPolicy }) => {
           .oneOf([true], 'Pole obowiązkowe'),
       })}
       onSubmit={(values, { setSubmitting, resetForm }) => {
-        resetForm();
-        console.log(values);
-        setSubmitting(false);
+        setTimeout(() => {
+          emailjs
+            .send(
+              'gmail',
+              'template_9xns9er',
+              {
+                personalDate: values.personalDate,
+                phoneNumber: values.phoneNumber,
+                city: values.city,
+                message: values.message,
+              },
+              'user_0dBUHSltv50ciiIFRlEjN'
+            )
+            .then(() => {
+              setSubmitting(false);
+              resetForm();
+            })
+            .catch(() => {
+              setSubmitting(false);
+              alert('Error sending email...');
+            });
+        }, 1000);
       }}
     >
       {(props) => (
@@ -123,7 +144,10 @@ const ContactForm = ({ handleOpenPolicy }) => {
           </div>
           <div className="buttonContainer">
             <div className="termsContainer">
-              <CustomCheckbox name="acceptTerms"></CustomCheckbox>
+              <CustomCheckbox
+                className="test"
+                name="acceptTerms"
+              ></CustomCheckbox>
               Akceptuję politykę prywatności
               <span className="rodoPolicy" onClick={handleOpenPolicy}>
                 RODO

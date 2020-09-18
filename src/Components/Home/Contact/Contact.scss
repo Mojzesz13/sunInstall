@@ -25,15 +25,14 @@
   }
   .rodoComponent {
     width: 90%;
-    margin-bottom: 2rem;
-    visibility: hidden;
-    animation-duration: 0.5s;
-    animation-name: rodoAnimationBack;
     height: 0;
-    animation-fill-mode: forwards;
+    margin-bottom: 2rem auto;
     visibility: hidden;
     align-self: center;
     font-size: 1.5rem;
+    animation-duration: 0.5s;
+    animation-name: rodoAnimationBack;
+    animation-fill-mode: forwards;
   }
   @keyframes rodoAnimationBack {
     from {
@@ -48,8 +47,8 @@
     }
   }
   .activeRodo {
-    visibility: hidden;
     height: 15rem;
+    visibility: hidden;
     animation-name: rodoAnimation;
     animation-fill-mode: forwards;
   }
@@ -112,7 +111,7 @@
       }
       .buttonContainer {
         width: 100%;
-        margin: 2rem 0 2 0rem;
+        margin: 2rem 0 2rem 0rem;
         display: flex;
         align-items: center;
 
