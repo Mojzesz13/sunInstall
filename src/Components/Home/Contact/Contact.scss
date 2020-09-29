@@ -23,47 +23,6 @@
     display: flex;
     flex-direction: row;
   }
-  .rodoComponent {
-    width: 90%;
-    height: 0;
-    margin-bottom: 2rem auto;
-    visibility: hidden;
-    align-self: center;
-    font-size: 1.5rem;
-    animation-duration: 0.5s;
-    animation-name: rodoAnimationBack;
-    animation-fill-mode: forwards;
-  }
-  @keyframes rodoAnimationBack {
-    from {
-      height: 0;
-      visibility: hidden;
-      opacity: 0;
-    }
-    to {
-      height: 15rem;
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-  .activeRodo {
-    height: 15rem;
-    visibility: hidden;
-    animation-name: rodoAnimation;
-    animation-fill-mode: forwards;
-  }
-  @keyframes rodoAnimation {
-    from {
-      height: 15rem;
-      visibility: visible;
-      opacity: 1;
-    }
-    to {
-      height: 0;
-      visibility: hidden;
-      opacity: 0;
-    }
-  }
 }
 
 @include desktop {
