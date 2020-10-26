@@ -133,7 +133,6 @@ const ContactForm = ({ handleOpenPolicy }) => {
           <div className="textAreaContainer">
             <TextArea label="Wiadomość" name="message" type="text" />
             <CustomTooltip
-              className="test"
               title={tooltipText}
               placement="bottom"
             >

@@ -6,20 +6,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 3rem 1rem 1rem 1rem;
+  align-items: center;
+  margin: 3rem 3rem 1rem 3rem;
+  font-size: 2rem;
+  text-align: center;
 
   .icon {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 6rem;
+    width: 6rem;
   }
-  .text {
-    font-size: 2rem;
-    text-align: center;
-    p {
-      margin-top: 1rem;
-    }
+  p {
+    margin-top: 1rem;
   }
 }
 
