@@ -2,8 +2,8 @@
 @import 'src/scss/settings/colors';
 
 .scrollTop {
-  height: 2rem;
-  width: 5%;
+  height: 7rem;
+  width: 7rem;
   position: fixed;
   bottom: 4rem;
   right: 2rem;
@@ -16,6 +16,10 @@
   opacity: 0.6;
   font-size: 7rem;
   color: $barContainerColor;
+  .upArrow {
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 .scrollTop:hover {

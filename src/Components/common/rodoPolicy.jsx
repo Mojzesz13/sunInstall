@@ -6,11 +6,7 @@ let rodoText =
 
 const RodoPolicy = ({ visibleCondition }) => {
   return (
-    <div
-      className={
-        visibleCondition ? 'rodoComponent' : 'rodoComponent activeRodo'
-      }
-    >
+    <div className={visibleCondition ? 'rodoComponent' : 'rodoComponent activeRodo'}>
       {rodoText}
     </div>
   );

@@ -29,3 +29,31 @@
     }
   }
 }
+
+@include tabletMax {
+  .mapContainer {
+    width: 40%;
+    margin-top: 5%;
+    .textSection {
+      width: 90%;
+    }
+  }
+}
+
+@include tabletMin {
+  .mapContainer {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .mapContainer {
+    width: 90%;
+  }
+}
+
+@include mobileMin {
+  .mapContainer {
+    width: 90%;
+  }
+}

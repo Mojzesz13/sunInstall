@@ -32,8 +32,9 @@
   }
 
   .termsContainer {
+    margin-left: 3rem;
     flex-direction: row;
-    width: 60%;
+    width: 80%;
     .checkbox {
       input {
         width: 5rem;
@@ -68,17 +69,26 @@
 }
 
 @include tabletMax {
-  .formContainer:before {
-    left: 4%;
-  }
-  .buttonContainer {
-    width: 95%;
+  .formContainer {
+    width: 60%;
+    &:before {
+      left: 4%;
+    }
+
+    .buttonContainer {
+      width: 95%;
+    }
+    .termsContainer {
+      width: 80%;
+    }
   }
 }
-
 @include tabletMin {
-  .formContainer:before {
-    left: 0;
+  .formContainer {
+    width: 60%;
+    &:before {
+      left: 0;
+    }
   }
 }
 

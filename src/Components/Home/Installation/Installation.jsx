@@ -4,7 +4,7 @@ import SeparateBar from '../../common/separateBar/separateBar4';
 import TextContainer from '../../common/textContainer';
 import firstPhoto from '../../../assets/workerFirst.jpg';
 import secendPhoto from '../../../assets/workerSecond.jpg';
-import thirdPhoto from '../../../assets/workerFirst.jpg';
+import thirdPhoto from '../../../assets/workerThird.jpg';
 
 const Installation = () => {
   const firstParagraph = (

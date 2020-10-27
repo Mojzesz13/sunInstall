@@ -16,6 +16,7 @@
 
 @include desktop {
   .homeNeed {
+    // height: 110rem;
     .needContainer {
       width: 95%;
     }
@@ -31,14 +32,20 @@
   }
 }
 
+@include tabletMin {
+  .homeNeed {
+    height: 65rem;
+  }
+}
+
 @include mobile {
   .homeNeed {
-    height: 60rem;
+    height: 85rem;
   }
 }
 
 @include mobileMin {
   .homeNeed {
-    height: 125rem;
+    height: 155rem;
   }
 }

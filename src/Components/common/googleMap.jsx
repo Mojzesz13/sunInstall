@@ -2,7 +2,7 @@ import React from 'react';
 import './googleMap.scss';
 import map from '../../assets/mapSunInstal.svg'
 
-const GoogleMapTest = () => {
+const Map = () => {
 
   return (
     <div className="mapContainer">
@@ -20,4 +20,4 @@ const GoogleMapTest = () => {
   );
 };
 
-export default GoogleMapTest;
+export default Map;

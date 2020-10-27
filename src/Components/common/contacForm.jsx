@@ -68,7 +68,6 @@ const tooltipText =
   'Prosimy, abyś w wiadomości podał nam więcej informacji o inwestycji, np. jej planowana wielkość (jeśli wiesz), planowany czas realizacji itp.';
 
 const ContactForm = ({ handleOpenPolicy }) => {
-  // const [data, setData] = useState('');
   return (
     <Formik
       initialValues={{

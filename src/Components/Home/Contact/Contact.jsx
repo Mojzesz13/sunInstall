@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Contact.scss';
 import SeparateBar from '../../common/separateBar/separateBar5';
 import ContactForm from '../../common/contacForm';
-import GoogleMapTest from '../../common/googleMap';
+import Map from '../../common/googleMap';
 import RodoPolicy from '../../common/rodoPolicy';
 
 const Contact = () => {
@@ -20,7 +20,7 @@ const Contact = () => {
       </div>
       <h1>Kontakt</h1>
       <div className="tableContainer">
-        <GoogleMapTest />
+        <Map />
         <ContactForm handleOpenPolicy={handleOpenPolicy} />
       </div>
       <RodoPolicy visibleCondition={openPolicy} />

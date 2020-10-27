@@ -1,49 +1,50 @@
 @import 'src/scss/settings/mixins';
 
-.need {
-  width: 34rem;
+.needHolder {
+  width: 30rem;
   height: 30rem;
+  margin: 3rem 2.5rem 1rem 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 3rem 3rem 1rem 3rem;
   font-size: 2rem;
+  line-height: 2.5rem;
   text-align: center;
-
   .icon {
     width: 6rem;
   }
   p {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
 @include desktop {
-  .need {
-    width: 35rem;
-    height: 25rem;
-  }
-}
-
-@include tabletMax {
-  .need {
+  .needHolder {
     width: 28rem;
     height: 25rem;
   }
 }
 
+@include tabletMax {
+  .needHolder {
+    width: 26rem;
+    height: 22rem;
+    margin: 3rem 2rem 1rem 2rem;
+  }
+}
+
 @include tabletMin {
-  .need {
-    width: 25rem;
+  .needHolder {
+    width: 22rem;
     height: 20rem;
   }
 }
 
 @include mobile {
-  .need {
-    width: 22rem;
-    height: 15rem;
+  .needHolder {
+    width: 25rem;
+    height: 20rem;
     .icon {
       font-size: 3rem;
     }

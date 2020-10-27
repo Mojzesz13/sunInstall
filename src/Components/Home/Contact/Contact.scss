@@ -3,7 +3,7 @@
 
 .contactContainer {
   width: 100%;
-  max-height: 95rem;
+  height: 95rem;
   display: flex;
   flex-direction: column;
   // background-image: url('../../../assets/contactBackground.jpg');
@@ -25,74 +25,12 @@
   }
 }
 
-@include desktop {
-  .contactContainer {
-    .formContainer:before {
-      left: 5%;
-    }
-    .inputContainer {
-      textarea {
-        min-width: 30rem;
-      }
-    }
-  }
-}
-
-@include tabletMax {
-  .contactContainer {
-    .formContainer:before {
-      left: 4%;
-    }
-    .buttonContainer {
-      width: 95%;
-    }
-  }
-}
 @include tabletMin {
   .contactContainer {
-    .formContainer:before {
-      left: 0;
-    }
-  }
-}
-
-@include mobile {
-  .contactContainer {
-    .formContainer {
-      width: 95%;
-      input {
-        width: 25rem;
-      }
-      TextArea {
-        width: 25rem;
-        min-height: 8rem;
-        max-height: 10 rem;
-      }
-      .buttonContainer {
-        width: 100%;
-        margin: 2rem 0 2rem 0rem;
-        display: flex;
-        align-items: center;
-
-        input {
-          width: 5%;
-          margin-left: 1rem;
-        }
-      }
-      .formContainer:before {
-        left: 40%;
-      }
-      .checkbox {
-        input {
-          width: 3rem;
-        }
-        span {
-          margin: 0.5rem;
-          color: $barContainerColor;
-          font-size: 1.5rem;
-          font-weight: 700;
-        }
-      }
+    height: 130rem;
+    .tableContainer {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

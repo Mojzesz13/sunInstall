@@ -2,23 +2,32 @@
 @import 'src/scss/settings/colors';
 
 .footerContainer {
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   background-color: $barContainerColor;
-  color: $fontTitleColor;
-  font-size: 2rem;
-  .contactFooter {
-    a {
-      color: black;
+  .footerHolder {
+    width: 95%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: $fontTitleColor;
+    font-size: 2rem;
+    .contactFooter {
+      a {
+        color: black;
+      }
+    }
+    .fbIcon {
+      width: 4rem;
+      height: 4rem;
     }
   }
-  i {
-    width: 4rem;
-    height: 4rem;
-    color: $squareColor;
+}
+@include mobile {
+  .footerContainer {
+    .footerHolder {
+      height: 15rem;
+      flex-direction: column;
+    }
   }
 }
