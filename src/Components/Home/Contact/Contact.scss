@@ -25,12 +25,24 @@
   }
 }
 
+@include tabletMax {
+  .contactContainer {
+    height: 80rem;
+  }
+}
+
 @include tabletMin {
   .contactContainer {
-    height: 130rem;
+    height: 125rem;
     .tableContainer {
       flex-direction: column;
       align-items: center;
     }
+  }
+}
+
+@include tabletMin {
+  .contactContainer {
+    height: 115rem;
   }
 }

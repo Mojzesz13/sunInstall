@@ -132,6 +132,7 @@ const ContactForm = ({ handleOpenPolicy }) => {
           <div className="textAreaContainer">
             <TextArea label="Wiadomość" name="message" type="text" />
             <CustomTooltip
+              className="tooltip"
               title={tooltipText}
               placement="bottom"
             >
@@ -142,10 +143,7 @@ const ContactForm = ({ handleOpenPolicy }) => {
           </div>
           <div className="buttonContainer">
             <div className="termsContainer">
-              <CustomCheckbox
-                className="test"
-                name="acceptTerms"
-              ></CustomCheckbox>
+              <CustomCheckbox name="acceptTerms"/>
               Akceptuję politykę prywatności
               <span className="rodoPolicy" onClick={handleOpenPolicy}>
                 RODO

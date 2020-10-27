@@ -48,7 +48,17 @@
 
 @include mobile {
   .mapContainer {
-    width: 90%;
+    width: 100%;
+    .textSection {
+      margin-left: 0;
+      p {
+        height: 5rem;
+      }
+      // a {
+      //   margin: 0.5rem 0 0 0.5rem;
+      //   color: black;
+      // }
+    }
   }
 }
 
