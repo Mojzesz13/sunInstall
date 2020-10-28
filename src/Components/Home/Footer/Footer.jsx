@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footerContainer">
       <div className="footerHolder"> 
-      <div className="copyright">@Copyright- JustScore</div>
+      <div className="copyright">&#xA9; Copyright- JustScore</div>
        <a href="https://www.facebook.com/SUN-Install-105339907936880">
         <img className="fbIcon" src={fbIcon} alt="SunInstallFacebook"/>
       </a>

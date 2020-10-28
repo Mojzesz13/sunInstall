@@ -3,7 +3,7 @@
 
 .headerLinks {
   width: 60%;
-  margin-right: 2rem;
+  margin-right: 10rem;
   display: flex;
   justify-content: space-evenly;
 
@@ -25,7 +25,7 @@
   .headerLinks {
     width: 50%;
     height: 49%;
-    margin-top: 7%;
+    margin: 7% 0 0 0;
     position: absolute;
     top: 5.7%;
     left: -100%;
@@ -41,7 +41,7 @@
     }
   }
   .headerLinks.active {
-    left: 0;
+    left: -10%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
@@ -51,7 +51,7 @@
 @include mobile {
   .headerLinks {
     width: 100%;
-    margin-top: 25%;
+    margin-top: 10%;
     .navItem {
       text-align: center;
       border: 1px dotted black;

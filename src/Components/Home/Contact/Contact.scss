@@ -43,6 +43,18 @@
 
 @include tabletMin {
   .contactContainer {
+    height: 125rem;
+  }
+}
+
+@include mobile {
+  .contactContainer {
+    height: 130rem;
+  }
+}
+
+@include mobileMin {
+  .contactContainer {
     height: 115rem;
   }
 }
